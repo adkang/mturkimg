@@ -9,7 +9,7 @@
       		var addedelements = [];
 
     		$(document).ready(function() {
-    			$("#theimage").click(function(e) {
+    			$("#image6").click(function(e) {
           		numclicks++;
 				console.log(e)
           		$("#numberofpeople").text(numclicks);
@@ -77,17 +77,17 @@
 		
 		<p>Example 3: 3 people<br><img src="example3.jpeg" alt="#2" width=512></p>
     
-		<p>#1<br><img src="people1.jpg" alt="#1" width=512></p>
+		<p>#1<br><img id="image1" src="people1.jpg" alt="#1" width=512></p>
 
-		<p>#2<br><img src="people2.jpg" alt="#2" width=512></p>
+		<p>#2<br><img id="image2" src="people2.jpg" alt="#2" width=512></p>
 
-		<p>#3<br><img src="people3.jpg" alt="#3" width=512></p>
+		<p>#3<br><img id="image3" src="people3.jpg" alt="#3" width=512></p>
 
-		<p>#4<br><img src="people4.jpg" alt="#4" width=512></p>
+		<p>#4<br><img id="image4" src="people4.jpg" alt="#4" width=512></p>
 
-		<p>#5<br><img src="people5.png" alt="#5" width=512></p>
+		<p>#5<br><img id="image5" src="people5.png" alt="#5" width=512></p>
 
-		<p>#6<br><img src="people6.jpg" alt="#6" width=512></p>
+		<p>#6<br><img id="image6" src="people6.jpg" alt="#6" width=512></p>
 		<p><span id="numberofpeople">0</span> people found</p>
 		<form id="mturk_form">
 			<p>
@@ -98,7 +98,7 @@
 				<input type="text" name="people">
 			</p>
 
-		<p>#7<br><img src="people7.jpg" alt="#7" width=512></p>
+		<p>#7<br><img id="image7" src="people7.jpg" alt="#7" width=512></p>
 		
 		<textarea name="people" style="width:250px;height:150px;"></textarea>
 		<br>
