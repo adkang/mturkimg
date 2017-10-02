@@ -9,11 +9,48 @@
       		var addedelements = [];
 
     		$(document).ready(function() {
-    			$("#image6").click(function(e) {
-          		numclicks++;
+			
+			$("#image1").click(function(e) {
+          			numclicks++;
 				console.log(e)
-          		$("#numberofpeople").text(numclicks);
-          		$("#numberofpeoplefield").val(numclicks);
+          		$("#numberofpeople1").text(numclicks);
+          		$("#numberofpeoplefield1").val(numclicks);
+				
+			$("#image2").click(function(e) {
+          			numclicks++;
+				console.log(e)
+          		$("#numberofpeople2").text(numclicks);
+          		$("#numberofpeoplefield2").val(numclicks);
+				
+    			$("#image3").click(function(e) {
+          			numclicks++;
+				console.log(e)
+          		$("#numberofpeople3").text(numclicks);
+          		$("#numberofpeoplefield3").val(numclicks);
+			
+			$("#image4").click(function(e) {
+          			numclicks++;
+				console.log(e)
+          		$("#numberofpeople4").text(numclicks);
+          		$("#numberofpeoplefield4").val(numclicks);
+				
+			$("#image5").click(function(e) {
+          			numclicks++;
+				console.log(e)
+          		$("#numberofpeople5").text(numclicks);
+          		$("#numberofpeoplefield5").val(numclicks);
+				
+			$("#image6").click(function(e) {
+          			numclicks++;
+				console.log(e)
+          		$("#numberofpeople6").text(numclicks);
+          		$("#numberofpeoplefield6").val(numclicks);
+			
+			$("#image7").click(function(e) {
+          			numclicks++;
+				console.log(e)
+          		$("#numberofpeople7").text(numclicks);
+          		$("#numberofpeoplefield7").val(numclicks);
 	
 	       		var newdomelement = $("<div class='marker'></div>");
 	          	newdomelement.css("left", (e.pageX-3) + "px");
@@ -77,30 +114,57 @@
 		
 		<p>Example 3: 3 people<br><img src="example3.jpeg" alt="#2" width=512></p>
     
-		<p>#1<br><img id="image1" src="people1.jpg" alt="#1" width=512></p>
-
-		<p>#2<br><img id="image2" src="people2.jpg" alt="#2" width=512></p>
-
-		<p>#3<br><img id="image3" src="people3.jpg" alt="#3" width=512></p>
-
-		<p>#4<br><img id="image4" src="people4.jpg" alt="#4" width=512></p>
-
-		<p>#5<br><img id="image5" src="people5.png" alt="#5" width=512></p>
-
-		<p>#6<br><img id="image6" src="people6.jpg" alt="#6" width=512></p>
-		<p><span id="numberofpeople">0</span> people found</p>
 		<form id="mturk_form">
+		<p>#1<br><img id="image1" src="people1.jpg" alt="#1" width=512></p>
+		<p><span id="numberofpeople1">0</span> people found</p>
 			<p>
-				<input id="numclickfield" type="hidden" name="numclicks">
-				<input id="numkeydowns" type="hidden" name="keydowns">
-				<input id="numberofpoeplefield" type="hidden" name="numberofpeople">
-				<input id="history" type="hidden" name="history">
-				<input type="text" name="people">
+				<input id="numclickfield1" type="hidden" name="numclicks1">
+				<input id="numkeydowns1" type="hidden" name="keydowns1">
+				<input id="numberofpoeplefield1" type="hidden" name="numberofpeople1">
+			</p>
+		<p>#2<br><img id="image2" src="people2.jpg" alt="#2" width=512></p>
+		<p><span id="numberofpeople2">0</span> people found</p>
+			<p>
+				<input id="numclickfield2" type="hidden" name="numclicks2">
+				<input id="numkeydowns2" type="hidden" name="keydowns2">
+				<input id="numberofpoeplefield2" type="hidden" name="numberofpeople2">
+			</p>
+		<p>#3<br><img id="image3" src="people3.jpg" alt="#3" width=512></p>
+		<p><span id="numberofpeople3">0</span> people found</p>
+			<p>
+				<input id="numclickfield3" type="hidden" name="numclicks3">
+				<input id="numkeydowns3" type="hidden" name="keydowns3">
+				<input id="numberofpoeplefield3" type="hidden" name="numberofpeople3">
+			</p>
+		<p>#4<br><img id="image4" src="people4.jpg" alt="#4" width=512></p>
+		<p><span id="numberofpeople4">0</span> people found</p>
+			<p>
+				<input id="numclickfield4" type="hidden" name="numclicks4">
+				<input id="numkeydowns4" type="hidden" name="keydowns4">
+				<input id="numberofpoeplefield4" type="hidden" name="numberofpeople4">
+			</p>
+		<p>#5<br><img id="image5" src="people5.png" alt="#5" width=512></p>
+		<p><span id="numberofpeople5">0</span> people found</p>
+			<p>
+				<input id="numclickfield5" type="hidden" name="numclicks5">
+				<input id="numkeydowns5" type="hidden" name="keydowns5">
+				<input id="numberofpoeplefield5" type="hidden" name="numberofpeople5">
+			</p>
+		<p>#6<br><img id="image6" src="people6.jpg" alt="#6" width=512></p>
+		<p><span id="numberofpeople6">0</span> people found</p>
+			<p>
+				<input id="numclickfield6" type="hidden" name="numclicks6">
+				<input id="numkeydowns6" type="hidden" name="keydowns6">
+				<input id="numberofpoeplefield6" type="hidden" name="numberofpeople6">
 			</p>
 
 		<p>#7<br><img id="image7" src="people7.jpg" alt="#7" width=512></p>
-		
-		<textarea name="people" style="width:250px;height:150px;"></textarea>
+		<p><span id="numberofpeople7">0</span> people found</p>
+			<p>
+				<input id="numclickfield7" type="hidden" name="numclicks7">
+				<input id="numkeydowns7" type="hidden" name="keydowns7">
+				<input id="numberofpoeplefield7" type="hidden" name="numberofpeople7">
+			</p>
 		<br>
 		<input type="submit" name="Submit">
 		</form>
