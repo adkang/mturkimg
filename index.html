@@ -9,10 +9,10 @@
       			var addedelements = [];
 
     			$(document).ready(function() {
-    			$("#theimage").click(function(e) {
-          		numclicks++;
-          		$("#numberofpeople").text(numclicks);
-          		$("#numberofpeoplefield").val(numclicks);
+    				$("#theimage").click(function(e) {
+          			numclicks++;
+          			$("#numberofpeople").text(numclicks);
+          			$("#numberofpeoplefield").val(numclicks);
 
           		var newdomelement = $("<div class='marker'></div>");
           		newdomelement.css("left", (e.pageX-3) + "px");
@@ -42,30 +42,29 @@
     				})
     		})
 	
-      function removeElement(elem) {
-        $(elem).remove();
+      		function removeElement(elem) {
+        		$(elem).remove();
 
-        numclicks--;
-        $("#numberofpeople").text(numclicks);
-        $("#numberofpeoplefield").val(numclicks);       
-      }
+        		numclicks--;
+        		$("#numberofpeople").text(numclicks);
+        		$("#numberofpeoplefield").val(numclicks);       
+      		}
 
-      function removeElementEvent(e) {
-        removeElement(this);
-      }
+      		function removeElementEvent(e) {
+        		removeElement(this);
+      		}
     
-	</script>
-	<style>
-		
-    	.marker {
-    	  border: 2px solid red;
-    	  border-radius: 5px;
-    	  width: 2px;
-    	  height: 2px;
-    	  position: absolute;
-    	  left: 0px;
-    	  top: 0px;
-    	}
+		</script>
+	<style>	
+    		.marker {
+    		  border: 2px solid red;
+   	 	  border-radius: 5px;
+   	 	  width: 2px;
+    		  height: 2px;
+   	 	  position: absolute;
+    		  left: 0px;
+    		  top: 0px;
+   	 	}
 	</style>
 	</head>
 	<body style>
@@ -89,9 +88,6 @@
 
 		<p>#6<br><img src="people6.jpg" alt="#6" width=512></p>
 		<p><span id="numberofpeople">0</span> people found</p>
-
-		<p>#7<br><img src="people7.jpg" alt="#7" width=512></p>
-		
 		<form id="mturk_form">
 			<p>
 				<input id="numclickfield" type="hidden" name="numclicks">
@@ -99,6 +95,9 @@
 				<input id="numberofpoeplefield" type="hidden" name="numberofpeople">
 				<input id="history" type="hidden" name="history">
 			</p>
+
+		<p>#7<br><img src="people7.jpg" alt="#7" width=512></p>
+		
 		<textarea name="people" style="width:250px;height:150px;"></textarea>
 		<input type="submit">
 		</form>
