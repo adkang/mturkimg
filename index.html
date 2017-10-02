@@ -27,42 +27,6 @@
 				console.log(e)
           		$("#numberofpeople1").text(numclicks);
           		$("#numberofpeoplefield1").val(numclicks);
-				
-			$("#image2").click(function(e) {
-          			numclicks2++;
-				console.log(e)
-          		$("#numberofpeople2").text(numclicks2);
-          		$("#numberofpeoplefield2").val(numclicks2);
-				
-    			$("#image3").click(function(e) {
-          			numclicks3++;
-				console.log(e)
-          		$("#numberofpeople3").text(numclicks3);
-          		$("#numberofpeoplefield3").val(numclicks3);
-			
-			$("#image4").click(function(e) {
-          			numclicks4++;
-				console.log(e)
-          		$("#numberofpeople4").text(numclicks4);
-          		$("#numberofpeoplefield4").val(numclicks4);
-				
-			$("#image5").click(function(e) {
-          			numclicks5++;
-				console.log(e)
-          		$("#numberofpeople5").text(numclicks5);
-          		$("#numberofpeoplefield5").val(numclicks5);
-				
-			$("#image6").click(function(e) {
-          			numclicks6++;
-				console.log(e)
-          		$("#numberofpeople6").text(numclicks6);
-          		$("#numberofpeoplefield6").val(numclicks6);
-			
-			$("#image7").click(function(e) {
-          			numclicks7++;
-				console.log(e)
-          		$("#numberofpeople7").text(numclicks7);
-          		$("#numberofpeoplefield7").val(numclicks7);
 	
 	       		var newdomelement = $("<div class='marker'></div>");
 	          	newdomelement.css("left", (e.pageX-3) + "px");
@@ -79,6 +43,139 @@
           		// add to history
           		addedelements.push(newdomelement);
     				})
+			
+			$("#image2").click(function(e) {
+          			numclicks2++;
+				console.log(e)
+          		$("#numberofpeople2").text(numclicks2);
+          		$("#numberofpeoplefield2").val(numclicks2);
+				
+			var newdomelement = $("<div class='marker'></div>");
+	          	newdomelement.css("left", (e.pageX-3) + "px");
+        	  	newdomelement.css("top", (e.pageY-3) + "px");
+
+	          	var currhistory = $("#history").val();
+        	  	currhistory += "|" + e.pageX + "," + e.pageY + "|";
+          		$("#history").val(currhistory);
+
+	          	newdomelement.click(removeElementEvent);
+
+        	  	$("body").append(newdomelement);
+
+          		// add to history
+          		addedelements.push(newdomelement);
+    				})
+				
+    			$("#image3").click(function(e) {
+          			numclicks3++;
+				console.log(e)
+          		$("#numberofpeople3").text(numclicks3);
+          		$("#numberofpeoplefield3").val(numclicks3);
+			
+			var newdomelement = $("<div class='marker'></div>");
+	          	newdomelement.css("left", (e.pageX-3) + "px");
+        	  	newdomelement.css("top", (e.pageY-3) + "px");
+
+	          	var currhistory = $("#history").val();
+        	  	currhistory += "|" + e.pageX + "," + e.pageY + "|";
+          		$("#history").val(currhistory);
+
+	          	newdomelement.click(removeElementEvent);
+
+        	  	$("body").append(newdomelement);
+
+          		// add to history
+          		addedelements.push(newdomelement);
+    				})
+			
+			$("#image4").click(function(e) {
+          			numclicks4++;
+				console.log(e)
+          		$("#numberofpeople4").text(numclicks4);
+          		$("#numberofpeoplefield4").val(numclicks4);
+			
+			var newdomelement = $("<div class='marker'></div>");
+	          	newdomelement.css("left", (e.pageX-3) + "px");
+        	  	newdomelement.css("top", (e.pageY-3) + "px");
+
+	          	var currhistory = $("#history").val();
+        	  	currhistory += "|" + e.pageX + "," + e.pageY + "|";
+          		$("#history").val(currhistory);
+
+	          	newdomelement.click(removeElementEvent);
+
+        	  	$("body").append(newdomelement);
+
+          		// add to history
+          		addedelements.push(newdomelement);
+    				})
+				
+			$("#image5").click(function(e) {
+          			numclicks5++;
+				console.log(e)
+          		$("#numberofpeople5").text(numclicks5);
+          		$("#numberofpeoplefield5").val(numclicks5);
+				
+			var newdomelement = $("<div class='marker'></div>");
+	          	newdomelement.css("left", (e.pageX-3) + "px");
+        	  	newdomelement.css("top", (e.pageY-3) + "px");
+
+	          	var currhistory = $("#history").val();
+        	  	currhistory += "|" + e.pageX + "," + e.pageY + "|";
+          		$("#history").val(currhistory);
+
+	          	newdomelement.click(removeElementEvent);
+
+        	  	$("body").append(newdomelement);
+
+          		// add to history
+          		addedelements.push(newdomelement);
+    				})
+				
+			$("#image6").click(function(e) {
+          			numclicks6++;
+				console.log(e)
+          		$("#numberofpeople6").text(numclicks6);
+          		$("#numberofpeoplefield6").val(numclicks6);
+				
+			var newdomelement = $("<div class='marker'></div>");
+	          	newdomelement.css("left", (e.pageX-3) + "px");
+        	  	newdomelement.css("top", (e.pageY-3) + "px");
+
+	          	var currhistory = $("#history").val();
+        	  	currhistory += "|" + e.pageX + "," + e.pageY + "|";
+          		$("#history").val(currhistory);
+
+	          	newdomelement.click(removeElementEvent);
+
+        	  	$("body").append(newdomelement);
+
+          		// add to history
+          		addedelements.push(newdomelement);
+    				})
+			
+			$("#image7").click(function(e) {
+          			numclicks7++;
+				console.log(e)
+          		$("#numberofpeople7").text(numclicks7);
+          		$("#numberofpeoplefield7").val(numclicks7);
+			
+			var newdomelement = $("<div class='marker'></div>");
+	          	newdomelement.css("left", (e.pageX-3) + "px");
+        	  	newdomelement.css("top", (e.pageY-3) + "px");
+
+	          	var currhistory = $("#history").val();
+        	  	currhistory += "|" + e.pageX + "," + e.pageY + "|";
+          		$("#history").val(currhistory);
+
+	          	newdomelement.click(removeElementEvent);
+
+        	  	$("body").append(newdomelement);
+
+          		// add to history
+          		addedelements.push(newdomelement);
+    				})
+			
     				$(document).keydown(function(e) {
     					keydowns++;
     					$("#numkeydowns").val(keydowns);
