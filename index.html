@@ -36,6 +36,18 @@
 	          		var currhistory = $("#history").val();
         	  		currhistory += "|" + e.pageX + "," + e.pageY + "|";
           			$("#history").val(currhistory);
+				
+				function removeElement(elem) {
+        				$(elem).remove();
+
+        				numclicks--;
+        				$("#numberofpeople").text(numclicks);
+        				$("#numberofpeoplefield").val(numclicks);       
+      				}
+
+      				function removeElementEvent(e) {
+        				removeElement(this);
+      				}
 
 	          		newdomelement.click(removeElementEvent);
 
@@ -58,6 +70,18 @@
 	          		var currhistory = $("#history").val();
         	  		currhistory += "|" + e.pageX + "," + e.pageY + "|";
           			$("#history").val(currhistory);
+					
+				function removeElement(elem) {
+        				$(elem).remove();
+
+        				numclicks2--;
+        				$("#numberofpeople").text(numclicks2);
+        				$("#numberofpeoplefield").val(numclicks2);       
+      				}
+
+      				function removeElementEvent(e) {
+        				removeElement(this);
+      				}
 
 	          		newdomelement.click(removeElementEvent);
 
@@ -80,6 +104,18 @@
 	          		var currhistory = $("#history").val();
         	  		currhistory += "|" + e.pageX + "," + e.pageY + "|";
           			$("#history").val(currhistory);
+				
+				function removeElement(elem) {
+        				$(elem).remove();
+
+        				numclicks3--;
+        				$("#numberofpeople").text(numclicks3);
+        				$("#numberofpeoplefield").val(numclicks3);       
+      				}
+
+      				function removeElementEvent(e) {
+        				removeElement(this);
+      				}
 
 	          		newdomelement.click(removeElementEvent);
 	
@@ -102,6 +138,18 @@
 		          	var currhistory = $("#history").val();
        		 	  	currhistory += "|" + e.pageX + "," + e.pageY + "|";
           			$("#history").val(currhistory);	
+					
+				function removeElement(elem) {
+        				$(elem).remove();
+
+        				numclicks4--;
+        				$("#numberofpeople").text(numclicks4);
+        				$("#numberofpeoplefield").val(numclicks4);       
+      				}
+
+      				function removeElementEvent(e) {
+        				removeElement(this);
+      				}
 
 		          	newdomelement.click(removeElementEvent);
 
@@ -124,6 +172,18 @@
 	          		var currhistory = $("#history").val();
         	  		currhistory += "|" + e.pageX + "," + e.pageY + "|";
           			$("#history").val(currhistory);
+					
+				function removeElement(elem) {
+        				$(elem).remove();
+
+        				numclicks5--;
+        				$("#numberofpeople").text(numclicks5);
+        				$("#numberofpeoplefield").val(numclicks5);       
+      				}
+
+      				function removeElementEvent(e) {
+        				removeElement(this);
+      				}
 
 	          		newdomelement.click(removeElementEvent);
 
@@ -146,6 +206,18 @@
 	          		var currhistory = $("#history").val();
         	  		currhistory += "|" + e.pageX + "," + e.pageY + "|";
           			$("#history").val(currhistory);
+					
+				function removeElement(elem) {
+        				$(elem).remove();
+
+        				numclicks6--;
+        				$("#numberofpeople").text(numclicks6);
+        				$("#numberofpeoplefield").val(numclicks6);       
+      				}
+
+      				function removeElementEvent(e) {
+        				removeElement(this);
+      				}
 
 	          		newdomelement.click(removeElementEvent);
 
@@ -168,6 +240,18 @@
 	          		var currhistory = $("#history").val();
         	  		currhistory += "|" + e.pageX + "," + e.pageY + "|";
           			$("#history").val(currhistory);
+					
+				function removeElement(elem) {
+        				$(elem).remove();
+
+        				numclicks7--;
+        				$("#numberofpeople").text(numclicks7);
+        				$("#numberofpeoplefield").val(numclicks7);       
+      				}
+
+      				function removeElementEvent(e) {
+        				removeElement(this);
+      				}
 
 	          		newdomelement.click(removeElementEvent);
 
@@ -189,18 +273,6 @@
           		}
     				})
     		})
-	
-      		function removeElement(elem) {
-        		$(elem).remove();
-
-        		numclicks--;
-        		$("#numberofpeople").text(numclicks);
-        		$("#numberofpeoplefield").val(numclicks);       
-      		}
-
-      		function removeElementEvent(e) {
-        		removeElement(this);
-      		}
     
 		</script>
 	<style>	
@@ -226,7 +298,7 @@
     
 		<form id="mturk_form">
 		<p>#1<br><img id="image1" src="people1.jpg" alt="#1" width=512></p>
-		<p><span id="numberofpeople1">0</span> people found</p>
+		<p><span id="numberofpeople1">0</span> people found (test)</p>
 			<p>
 				<input id="numclickfield1" type="hidden" name="numclicks1">
 				<input id="numkeydowns1" type="hidden" name="keydowns1">
