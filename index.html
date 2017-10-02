@@ -3,28 +3,29 @@
 		<script src="text/javascript"></script>
 		<script src="mturk.js"></script>
 		<script>
-			var numclicks = 0;
-    			var keydowns = 0;
+		var numclicks = 0;
+    		var keydowns = 0;
 
-      			var addedelements = [];
+      		var addedelements = [];
 
-    			$(document).ready(function() {
-    				$("#theimage").click(function(e) {
-          			numclicks++;
-          			$("#numberofpeople").text(numclicks);
-          			$("#numberofpeoplefield").val(numclicks);
+    		$(document).ready(function() {
+    			$("#theimage").click(function(e) {
+          		numclicks++;
+				console.log(e)
+          		$("#numberofpeople").text(numclicks);
+          		$("#numberofpeoplefield").val(numclicks);
+	
+	       		var newdomelement = $("<div class='marker'></div>");
+	          	newdomelement.css("left", (e.pageX-3) + "px");
+        	  	newdomelement.css("top", (e.pageY-3) + "px");
 
-          		var newdomelement = $("<div class='marker'></div>");
-          		newdomelement.css("left", (e.pageX-3) + "px");
-          		newdomelement.css("top", (e.pageY-3) + "px");
-
-          		var currhistory = $("#history").val();
-          		currhistory += "|" + e.pageX + "," + e.pageY + "|";
+	          	var currhistory = $("#history").val();
+        	  	currhistory += "|" + e.pageX + "," + e.pageY + "|";
           		$("#history").val(currhistory);
 
-          		newdomelement.click(removeElementEvent);
+	          	newdomelement.click(removeElementEvent);
 
-          		$("body").append(newdomelement);
+        	  	$("body").append(newdomelement);
 
           		// add to history
           		addedelements.push(newdomelement);
@@ -32,12 +33,12 @@
     				$(document).keydown(function(e) {
     					keydowns++;
     					$("#numkeydowns").val(keydowns);
-
-          		console.log(e);
+	
+       		   	console.log(e);
 
           		if(e.key=="z" && e.ctrlKey) {
-            			var elem2remove = addedelements.pop();
-            			removeElement(elem2remove);
+          	  		var elem2remove = addedelements.pop();
+          	  		removeElement(elem2remove);
           		}
     				})
     		})
@@ -67,7 +68,7 @@
    	 	}
 	</style>
 	</head>
-	<body style>
+	<body>
 		<h1>How many recognizable people are in each image? Please look at each image carefully.</h1>
 		
 		<p>Example 1: 5 people<br><img src="example1.jpg" alt="#1" width=512></p>
@@ -99,7 +100,8 @@
 		<p>#7<br><img src="people7.jpg" alt="#7" width=512></p>
 		
 		<textarea name="people" style="width:250px;height:150px;"></textarea>
-		<input type="submit">
+		<br>
+		<input type="submit" name="Submit">
 		</form>
 	</body>
 </html>
