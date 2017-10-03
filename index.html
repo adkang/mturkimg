@@ -259,11 +259,6 @@
     					$("#numkeydowns").val(keydowns);
 	
        		   	console.log(e);
-
-          		if(e.key=="z" && e.ctrlKey) {
-          	  		var elem2remove = addedelements.pop();
-          	  		removeElement(elem2remove);
-          		}
     				})
     		})
     
@@ -287,52 +282,52 @@
 		
 		<p>Example 2: 6 people (more than half a head is visible)<br><img src="example2.jpg" alt="#2" width=512></p>
 		
-		<p>Example 3: 3 people (less than a half a head is visible, so the person behind the person on the left doesn't count
+		<p>Example 3: 3 people (less than a half a head is visible, so the person behind the person on the left doesn't count)
 		<br><img src="example3.jpeg" alt="#2" width=512></p>
     
-		<form id="mturk_form">
+		<form action="get.php" id="mturk_form">
 		<p>#1<br><img id="image1" src="people1.jpg" alt="#1" width=512></p>
 		<p><span id="numberofpeople1">0</span> people found.</p>
 			<p>
 				<input id="numclickfield1" type="hidden" name="numclicks">
-				<input id="numberofpoeplefield1" type="hidden" name="numberofpeople1">
+				<input id="numberofpeoplefield1" type="hidden" name="numberofpeople1">
 			</p>
 		<p>#2<br><img id="image2" src="people2.jpg" alt="#2" width=512></p>
 		<p><span id="numberofpeople2">0</span> people found.</p>
 			<p>
 				<input id="numclickfield2" type="hidden" name="numclicks2">
-				<input id="numberofpoeplefield2" type="hidden" name="numberofpeople2">
+				<input id="numberofpeoplefield2" type="hidden" name="numberofpeople2">
 			</p>
 		<p>#3<br><img id="image3" src="people3.jpg" alt="#3" width=512></p>
 		<p><span id="numberofpeople3">0</span> people found.</p>
 			<p>
 				<input id="numclickfield3" type="hidden" name="numclicks3">
-				<input id="numberofpoeplefield3" type="hidden" name="numberofpeople3">
+				<input id="numberofpeoplefield3" type="hidden" name="numberofpeople3">
 			</p>
 		<p>#4<br><img id="image4" src="people4.jpg" alt="#4" width=512></p>
 		<p><span id="numberofpeople4">0</span> people found.</p>
 			<p>
 				<input id="numclickfield4" type="hidden" name="numclicks4">
-				<input id="numberofpoeplefield4" type="hidden" name="numberofpeople4">
+				<input id="numberofpeoplefield4" type="hidden" name="numberofpeople4">
 			</p>
 		<p>#5<br><img id="image5" src="people5.png" alt="#5" width=512></p>
 		<p><span id="numberofpeople5">0</span> people found.</p>
 			<p>
 				<input id="numclickfield5" type="hidden" name="numclicks5">
-				<input id="numberofpoeplefield5" type="hidden" name="numberofpeople5">
+				<input id="numberofpeoplefield5" type="hidden" name="numberofpeople5">
 			</p>
 		<p>#6<br><img id="image6" src="people6.jpg" alt="#6" width=512></p>
 		<p><span id="numberofpeople6">0</span> people found.</p>
 			<p>
 				<input id="numclickfield6" type="hidden" name="numclicks6">
-				<input id="numberofpoeplefield6" type="hidden" name="numberofpeople6">
+				<input id="numberofpeoplefield6" type="hidden" name="numberofpeople6">
 			</p>
 
 		<p>#7<br><img id="image7" src="people7.jpg" alt="#7" width=512></p>
 		<p><span id="numberofpeople7">0</span> people found.</p>
 			<p>
 				<input id="numclickfield7" type="hidden" name="numclicks7">
-				<input id="numberofpoeplefield7" type="hidden" name="numberofpeople7">
+				<input id="numberofpeoplefield7" type="hidden" name="numberofpeople7">
 			</p>
 		<br>
 		<input type="submit" name="Submit">
